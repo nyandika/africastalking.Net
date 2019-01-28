@@ -7,12 +7,12 @@ namespace Voice.MakeCall
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            var username = "UserName";
-            var apiKey = "APIKEY";
-            var from = "virtualNumber";
-            var to = "Number";
+            var username = "Username";
+            var apiKey = "APIKEY....";
+            var from = "+2ABXXYYYYYY";
+            var to = "+254720000000,+25472000000, test.mysip@ke.sip.africastalking.com";
             // Optional Param
-            var id = "RegionA";
+            var id = "Test";
 
             var gateway = new AfricasTalkingGateway(username, apiKey);
 

@@ -232,7 +232,10 @@ var callAction = gateway.Call(callerId, callees, clientRequestId);
             {
                 Console.WriteLine("Something went horribly wrong: " + exception.Message + ".\nCaused by :" + exception.StackTrace);
             }
-```
+``` 
+
+##### Important  
+Take a look at the voice sample application here [VoiceCallbackSample](https://github.com/AfricasTalkingLtd/africastalking.Net/tree/master/Examples/VoiceApplication)
 
 #### [UploadMediaFile](http://docs.africastalking.com/voice/uploadmedia) 
 - This feature alllows you to upload a media file from a known url to our servers. This media file can then be played on demand for example when executing `<Play>` action from your dialplan or `musicOnHold` or `ringBackTone` attributes on a dialplan. 
@@ -303,7 +306,6 @@ var airtimeTransaction = gateway.SendAirtime(airtimerecipients);
             airtimeUser.PhoneNumber = "+2547XXYYYYYY";
             airtimeUser.Amount = "KES 100";
             var airtimeRecipient = JsonConvert.SerializeObject(airtimeUser);
-            // {"phoNumber":"+2547XXYYYYYY", "amount":"KES 100"}
             var gateway = new AfricasTalkingGateway(username, apikey);
             try
             {
